@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .result-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>Sum Result</h2>
+        <p>Sum of <strong th:text="${num1}"></strong> and <strong th:text="${num2}"></strong> is <strong th:text="${sum}"></strong>.</p>
+        <a href="/">Calculate Another</a>
+    </div>
+</body>
+</html>
